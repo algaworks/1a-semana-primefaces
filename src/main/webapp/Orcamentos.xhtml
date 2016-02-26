@@ -13,14 +13,14 @@
 			<p:toolbar>
 				<p:toolbarGroup>
 					<p:commandButton value="Salvar" action="#{cadastroOrcamentoBean.salvar}"
-						update="@form" />
+						process="@this capaPanel" update="@form" />
 				</p:toolbarGroup>
 			</p:toolbar>
 			
 			<p:messages autoUpdate="false" />
 			
 			<div class="ui-fluid">
-				<p:panelGrid columns="4" layout="grid" 
+				<p:panelGrid id="capaPanel" columns="4" layout="grid" 
 					style="margin-top: 20px; margin-bottom: 40px"
 					styleClass="panelgrid-noborder"
 					columnClasses="ui-grid-col-2, ui-grid-col-4, ui-grid-col-2, ui-grid-col-4">
